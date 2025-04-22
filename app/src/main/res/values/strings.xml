@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">My City</string>
+    <string name="akko_coffee">Akko Coffee</string>
+    <string name="tomoca_coffee">Tomoca Coffee</string>
+    <string name="gesha_village_coffee">Gesha Village Coffee</string>
+    <string name="mamokacha_coffee">Mamokacha Coffee</string>
+    <string name="wild_coffee">Wild Coffee</string>
+
+    <string name="la_mandoline_restaurant">La Mandoline Restaurant</string>
+    <string name="om_indian_restaurant">OM Indian Restaurant</string>
+    <string name="sishu_restaurant">Sishu Restaurant</string>
+    <string name="the_oriental_restaurant">The Oriental Restaurant</string>
+    <string name="yod_abysinnia_restaurant">Yod Abysinnia Restaurant</string>
+
+    <string name="lion_park_kids">Lion Park</string>
+    <string name="sheger_park_kids">Sheger Park</string>
+    <string name="unity_park_kids">Unity Park</string>
+
+    <string name="entoto_park">Entoto Park</string>
+    <string name="friendship_park">Friendship Park</string>
+
+    <string name="lafto_mall_shopping_center">Lafto Mall</string>
+    <string name="mafi_shopping_center">Mafi City Mall</string>
+    <string name="morning_star_mall_shopping_center">Morning Star Mall</string>
 </resources>
