@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">My City</string>
+
+    <string name="category_coffee">Coffee</string>
+    <string name="category_restaurants">Restaurants</string>
+    <string name="category_kids">Kids</string>
+    <string name="category_parks">Parks</string>
+    <string name="category_shopping_centers">Shopping Centers</string>
+
     <string name="akko_coffee">Akko Coffee</string>
     <string name="tomoca_coffee">Tomoca Coffee</string>
     <string name="gesha_village_coffee">Gesha Village Coffee</string>
@@ -22,4 +29,10 @@
     <string name="lafto_mall_shopping_center">Lafto Mall</string>
     <string name="mafi_shopping_center">Mafi City Mall</string>
     <string name="morning_star_mall_shopping_center">Morning Star Mall</string>
+
+    <string name="place_description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, elit ut vestibulum imperdiet, velit mauris consequat nisl, sit amet consequat enim libero ut leo. Nunc vitae lacus consequat, lobortis massa quis, tincidunt libero. Sed egestas purus a tincidunt pretium. Ut urna lorem, facilisis sed lorem non, blandit ultrices nunc. Ut auctor lectus et nulla aliquam ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc vehicula eleifend est ut bibendum. Duis faucibus risus sit amet imperdiet blandit. Mauris lectus enim, blandit ornare nisl vel, varius facilisis mi. Ut ac ex eleifend, sollicitudin orci id, consectetur lorem. Nunc vel diam eu sem aliquet fringilla vitae sit amet mi. Integer rutrum justo erat, a condimentum quam accumsan a.
+
+        Vestibulum porta dui vitae bibendum tempus. Nam luctus nulla venenatis velit cursus tristique. Sed quis auctor nulla. Cras vulputate efficitur elit ac bibendum. Integer porta elit mauris, ac tincidunt tellus dictum sit amet. Duis et leo nisl. Praesent tincidunt, purus eu ultrices posuere, nunc orci rutrum enim, nec tincidunt velit enim sed tortor. Praesent sem libero, scelerisque nec diam ut, egestas consectetur felis. In vestibulum sed leo ac faucibus. Vestibulum eget tellus nisl. Proin porttitor, lacus at vehicula commodo, nunc neque mattis dolor, sit amet feugiat diam odio eu leo.
+    </string>
 </resources>
