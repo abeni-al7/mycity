@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,17 +27,13 @@ import com.example.mycity.data.Restaurants
 @Composable
 fun DetailScreen(
     place: Place,
-    modifier: Modifier
+    modifier: Modifier = Modifier
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
-        modifier = Modifier
-            .scrollable(
-                state = rememberScrollState(),
-                enabled = true,
-                orientation = Orientation.Vertical
-            )
+        modifier = modifier
+            .verticalScroll(rememberScrollState())
     ) {
         Image(
             painter = painterResource(place.imageResourceId),
@@ -65,6 +62,5 @@ fun DetailScreen(
 fun DetailScreenPreview() {
     DetailScreen(
         place = Restaurants.defaultRestaurant,
-        modifier = androidx.compose.ui.Modifier.Companion.padding(innerPadding)
     )
 }

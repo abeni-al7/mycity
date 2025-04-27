@@ -24,7 +24,9 @@ fun CategoriesScreen(
     onCategoryClick: (Category) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    LazyColumn {
+    LazyColumn(
+        modifier = modifier
+    ) {
         items(categories) { category ->
             CategoryCard(
                 category = category,

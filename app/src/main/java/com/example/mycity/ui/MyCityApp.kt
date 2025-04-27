@@ -1,5 +1,6 @@
 package com.example.mycity.ui
 
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -81,7 +82,9 @@ fun MyCityApp() {
                         viewModel.updateCurrentCategory(it)
                         navController.navigate(MyCityScreen.Places.name)
                     },
-                    modifier = Modifier.padding(innerPadding)
+                    modifier = Modifier
+                        .padding(innerPadding)
+                        .fillMaxSize()
                 )
             }
 
@@ -92,14 +95,18 @@ fun MyCityApp() {
                         viewModel.updateCurrentPlace(it)
                         navController.navigate(MyCityScreen.Detail.name)
                     },
-                    modifier = Modifier.padding(innerPadding)
+                    modifier = Modifier
+                        .padding(innerPadding)
+                        .fillMaxSize()
                 )
             }
 
             composable(route = MyCityScreen.Detail.name) {
                 DetailScreen(
                     place = uiState.value.currentPlace,
-                    modifier = Modifier.padding(innerPadding)
+                    modifier = Modifier
+                        .padding(innerPadding)
+                        .fillMaxSize()
                 )
             }
         }
