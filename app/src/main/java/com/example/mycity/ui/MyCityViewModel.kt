@@ -27,7 +27,8 @@ class MyCityViewModel: ViewModel() {
                 categories = Categories.allCategories,
                 places = CoffeePlaces.allCoffeePlaces,
                 currentCategory = Categories.defaultCategory,
-                currentPlace = CoffeePlaces.defaultCoffeePlace
+                currentPlace = CoffeePlaces.defaultCoffeePlace,
+                currentScreen = MyCityScreen.Categories
             )
         }
     }

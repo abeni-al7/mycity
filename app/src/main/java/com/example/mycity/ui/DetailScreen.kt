@@ -25,7 +25,8 @@ import com.example.mycity.data.Restaurants
 
 @Composable
 fun DetailScreen(
-    place: Place
+    place: Place,
+    modifier: Modifier
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -63,6 +64,7 @@ fun DetailScreen(
 @Composable
 fun DetailScreenPreview() {
     DetailScreen(
-        place = Restaurants.defaultRestaurant
+        place = Restaurants.defaultRestaurant,
+        modifier = androidx.compose.ui.Modifier.Companion.padding(innerPadding)
     )
 }

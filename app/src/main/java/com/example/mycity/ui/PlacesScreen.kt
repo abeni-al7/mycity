@@ -23,20 +23,27 @@ import com.example.mycity.data.Restaurants
 
 @Composable
 fun PlacesScreen(
-    places: List<Place>
+    places: List<Place>,
+    onPlaceClick: (Place) -> Unit = {},
+    modifier: Modifier = Modifier
 ) {
     LazyColumn {
         items(places) { place ->
-            PlaceCard(place)
+            PlaceCard(
+                place = place,
+                onPlaceClick = onPlaceClick
+            )
         }
     }
 }
 
 @Composable
 fun PlaceCard(
-    place: Place
+    place: Place,
+    onPlaceClick: (Place) -> Unit
 ) {
     Card(
+        onClick = { onPlaceClick(place) },
         modifier = Modifier
             .padding(8.dp)
             .fillMaxWidth()
@@ -83,6 +90,6 @@ fun PlaceDescription(
 @Composable
 fun PlacesScreenPreview() {
     PlacesScreen(
-        places = Restaurants.allRestaurants
+        places = Restaurants.allRestaurants,
     )
 }

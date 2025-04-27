@@ -20,20 +20,27 @@ import com.example.mycity.ui.theme.MyCityTheme
 
 @Composable
 fun CategoriesScreen(
-    categories: List<Category>
+    categories: List<Category>,
+    onCategoryClick: (Category) -> Unit,
+    modifier: Modifier = Modifier
 ) {
     LazyColumn {
         items(categories) { category ->
-            CategoryCard(category)
+            CategoryCard(
+                category = category,
+                onCategoryClick = onCategoryClick
+            )
         }
     }
 }
 
 @Composable
 fun CategoryCard(
-    category: Category
+    category: Category,
+    onCategoryClick: (Category) -> Unit
 ) {
     Card(
+        onClick = { onCategoryClick(category) },
         modifier = Modifier
             .padding(8.dp)
             .fillMaxWidth()
@@ -57,7 +64,8 @@ fun CategoryCard(
 fun CategoriesScreenPreview() {
     MyCityTheme {
         CategoriesScreen(
-            categories = Categories.allCategories
+            categories = Categories.allCategories,
+            onCategoryClick = {},
         )
     }
 }
